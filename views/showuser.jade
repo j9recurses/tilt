@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddUser(name="showuser",method="get",action="/smartpills/:userid")
+        input#inputUserName(type="text", placeholder="userid", name="userid")
+        button#btnSubmit(type="submit") submit

@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddUser(name="reminder",method="post",action="/reminder")
+        input#inputUserName(type="date", placeholder="date", name="date")
+        input#inputUserEmail(type="text", placeholder="time", name="time")
+        button#btnSubmit(type="submit") submit
